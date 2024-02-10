@@ -1,6 +1,6 @@
 # README
 
-`npx create-next-app@latest`した跡の経過は次のとおりです。
+`npx create-next-app@latest`した後の経過は次のとおりです。
 
 1. src/appを全削除
 2. 改めてsrc/appディレクトリを作成
