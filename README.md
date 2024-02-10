@@ -1,3 +1,38 @@
+# README
+
+`npx create-next-app@latest`した跡の経過は次のとおりです。
+
+1. src/appを全削除
+2. 改めてsrc/appディレクトリを作成
+3. さらにsrc/app配下に/about/、/blog/、/profile/を作成し、それぞれにpage.tsxファイルを作成
+
+この時点で`git status`した結果が下記のとおりです。
+
+```bash
+❯❯❯ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    src/app/favicon.ico
+        deleted:    src/app/globals.css
+        modified:   src/app/layout.tsx
+        modified:   src/app/page.tsx
+
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/app/about/
+        src/app/blog/
+        src/app/profile/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+```
+
+5. README.MDに上記の経過を追記
+
+<hr/>
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
