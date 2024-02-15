@@ -5,6 +5,7 @@
 import Link from "next/link";// Next.jsのLinkコンポーネントをインポート
 import { usePathname } from "next/navigation";// usePathnameは、現在のURLのパス名を取得するためのNext.jsのフックです。
 import "./styles.css";// スタイルシートをインポートします。
+import { useState } from "react";// useStateフックをインポートします。
 
 // ナビゲーションリンクの配列を定義します。各リンクは、その名前とhref属性（リンク先のパス）を持つオブジェクトです。
 const naviLinks = [
@@ -20,17 +21,23 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
     const pathname = usePathname();// 現在のURLのパス名を取得します。
-    console.log(pathname);
+    const [input, setInput] = useState("");// ユーザーの入力を保持するための状態を定義します。
+    
     return (
       <div>
+        <div>
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            className="border border-orange-300 p-2 mb-1" />  
+        </div>
         {naviLinks.map((link) => {// ナビゲーションリンクの配列をマップします。各リンクに対して、Linkコンポーネントをレンダリングします。
         const isActive = pathname.startsWith('/'+link.href);
-        // console.log('リンクは'+'/'+link.href);
           return (
             <Link
               href={link.href} 
               key={link.name}
-              className={isActive ? "font-bold mr-4" : "text-blue-900 mr-4"}
+              className={isActive ? "font-bold mr-4" : "text-blue-700 mr-4"}
             >
               {link.name}
             </Link>
