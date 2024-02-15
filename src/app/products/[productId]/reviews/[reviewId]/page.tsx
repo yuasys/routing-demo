@@ -13,11 +13,11 @@ export default function ReviewDetails({
       reviewId: string ;
     };
     }) {
-      const random = getRamdomInt(2);
+      // const random = getRamdomInt(2);
 
-      if (random === 1) {// Simulate an error
-        throw new Error("Error loading review");// This will be caught by the error boundary
-      }
+      // if (random === 1) {// Simulate an error
+      //   throw new Error("Error loading review");// This will be caught by the error boundary
+      // }
 
       if (parseInt(params.reviewId) > 1000) {
         notFound();
