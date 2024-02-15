@@ -1,5 +1,5 @@
 // Next.js 14 Tutorial - 20 - Active Links
-// https://www.youtube.com/watch?v=8v9P3i4gjGg
+// https://youtu.be/jzD1mUd35a0?si=IgGJrZX6OTvxacVT
 "use client"; // このコードがクライアントサイドで動作することを示すディレクティブです。
 
 import Link from "next/link";// Next.jsのLinkコンポーネントをインポート
@@ -28,9 +28,10 @@ export default function AuthLayout({
         // console.log('リンクは'+'/'+link.href);
           return (
             <Link
-             href={link.href} 
-             key={link.name}
-              className={isActive ? "font-bold mr-4" : "text-blue-900 mr-4"} >
+              href={link.href} 
+              key={link.name}
+              className={isActive ? "font-bold mr-4" : "text-blue-900 mr-4"}
+            >
               {link.name}
             </Link>
           );
