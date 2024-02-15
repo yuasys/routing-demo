@@ -1,5 +1,8 @@
 import { notFound } from "next/navigation";
-import { parse } from "path";
+
+function getRamdomInt(count: number) {
+  return Math.floor(Math.random() * count);
+}
 
 export default function ReviewDetails({
    params,
@@ -9,6 +12,12 @@ export default function ReviewDetails({
       reviewId: string ;
     };
     }) {
+      const random = getRamdomInt(2);
+
+      if (random === 1) {// Simulate an error
+        throw new Error("Error loading review");// This will be caught by the error boundary
+      }
+
       if (parseInt(params.reviewId) > 1000) {
         notFound();
       }
