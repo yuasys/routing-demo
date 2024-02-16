@@ -32,6 +32,12 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 5. README.MDに上記の経過を追記
 
+## ソースと学習動画との関連
+
+1. 全体を通しての学習動画リスト（[４４件](https://youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI&si=YC_XQW5-igtNiAtf)）
+2. Intercepting Routes [インターセプトルート](https://youtu.be/nr_kRfTJfKc?si=AW-8TTjdpiequqyp)
+3. 
+
 <hr/>
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
