@@ -35,8 +35,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ## ソースと学習動画との関連
 
 1. 全体を通しての学習動画リスト（[４４件](https://youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI&si=YC_XQW5-igtNiAtf)）
-2. Intercepting Routes [インターセプトルート](https://youtu.be/nr_kRfTJfKc?si=AW-8TTjdpiequqyp)
-3. 
+2. Next.js 14 Tutorial - 31 - Intercepting Routes [インターセプトルート](https://youtu.be/nr_kRfTJfKc?si=AW-8TTjdpiequqyp)
+3. Next.js 14 Tutorial - 32 - Parallel Intercepting Routes [パラレルインターセプトルート](https://youtu.be/mVOvx9eVHg0?si=kWC9x0VmmP6yDNA1)
 
 <hr/>
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
